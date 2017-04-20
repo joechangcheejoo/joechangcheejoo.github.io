@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+     <!--<link rel="stylesheet" type="text/css" href="theme.css"> -->
+     <!--<link rel="stylesheet" type="text/css" href="theme2.css"> -->
+     <!--<link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <link rel="stylesheet" type="text/css" href="theme4.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!-- use this style for testing and development purposes -->
+    <!--<style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+        
+        .row {
+            border: 1px dotted red;
+        }
+        
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>-->
+
+</head>
+
+<body>
+
+     <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- hamburger button. do not touch! -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+      <a class="navbar-brand" href="#">
+          <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+          <i class="fa fa-heart"></i>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- THIS UL HANDLES OUR LINKS -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://facebook.com">facebook</a></li>
+        <li><a href="http://facebook.com">facebook2</a></li>
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+        </div>
+        <div class="col-xs-12
+                     col-sm-12
+                     col-md-12
+                     col-lg-12">
+
+            <div class="jumbotron" style="background-image:url(http://vignette3.wikia.nocookie.net/disney/images/8/8b/Doc23.png) ">
+
+                <h1 class="wow lightSpeedIn text-white">Marriage Agency</h1>
+
+                
+                     
+                      
+                    
+                     </div>
+                   
+                <!--<p>...</p>
+                <button class="btn btn-primary">click me</button>-->
+
+            </div>
+
+        </div>
+        <!--sec row open-->
+        <div class="row">
+            <div class="col-xs-12
+                     col-sm-4
+                     col-md-4
+                     col-lg-4">
+                <div class="thumbnail">
+                    <img src="http://www.pauillac-medoc.com/typo3temp/anet_tourinsoft/fe1d5537447911f45b9051dcdf01ad0c.jpg">
+                    <div class="caption">
+                        <h3>Single Lady</h3>
+                        <p>
+                            Young And Pretty
+                        </P>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--2row 2col-->
+            <div class="col-xs-12
+                     col-sm-4
+                     col-md-4
+                     col-lg-4">
+                <div class="thumbnail">
+                    <img src="http://pm1.narvii.com/6311/11481ab7034037f2ef7c2284e5fc5390bbdf8036_hq.jpg">
+                    <div class="caption">
+                        <h3>Single Man</h3>
+                        <p>
+                            Handsome And Successful
+                        </P>
+                    </div>
+
+                </div>
+            </div>
+            <!--2row 3col-->
+            <div class="col-xs-12
+                     col-sm-4
+                     col-md-4
+                     col-lg-4">
+                <div class="thumbnail">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/1c/ef/71/1cef71ed30be60a1f3923466818f6709.jpg" class="wow swing">
+                    <div class="caption">
+                        <h3>Together</h3>
+                        <p>
+                            Strong Friendships
+                        </P>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--sec row close-->
+        </div>
+
+        <!--3row open-->
+        <div class="row">
+            <div class="col-xs-12
+                     col-sm-12
+                     col-md-12
+                     col-lg-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YBmT9Zq6P18"></iframe>
+
+
+                </div>
+            </div>
+        </div>
+        <!--<!-4row left form>-->
+        <div class="row">
+
+            <div class="col-xs-12
+                     col-sm-6
+                     col-md-6
+                     col-lg-6">
+                <div class="panel panel-default wow">
+                    <div class="panel-body">
+                        <form action="https://coderinyou-1332.appspot.com//sumit" method="post">
+
+                            <legend>Sign Up</legend>
+
+                            <div class="form-group">
+                                <label for="name-id">Name</label>
+                                <input id="name-id" class="form-control" type="text" name="NAME">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email-id">Emial</label>
+                                <input id="name-id" class="form-control" type="email" name="email">
+                            </div>
+
+                            <div class="radio">
+
+                                <label>
+                                        <input type="radio" name="gender" value="male"> Male
+                                    </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                         <input type="radio" name="gender" value="female"> female
+                                    </label>
+                            </div>
+                            <input type="submit" value="Why Not">
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-xs-12
+                          col-sm-6
+                          col-md-6
+                          col-lg-6 text-center">
+
+
+                <h1>A Brief Introduction To Our Company</h1>
+                <p><small>Our Company has eleven-years history since it was established in 2004. We have made good matches for more than a hundred people to get married since then. Generally, our Company is only selecting girls from Wenchang and Qionghai in Hainan province, because they possess the virtue of being a good wife and loving mothers. As to Vietnamese women, we choose the girls from the villages in the Southern part of Vietnam as they are pure in mind</small></p>
+
+            </div>
+        </div>
+
+
+        <!--<!-5row 1 from left>-->
+        <div class="row">
+
+            <div class="col-xs-12
+                     col-sm-4
+                     col-md-4
+                     col-lg-4">
+
+                <h3 class="text-center">Opening Hours</h3>
+                <table class="table table-striped">
+                    <tr>
+
+                        <th>Day</th>
+                        <th>Hours</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Monday to Thursday</th>
+                        <th>9am-5pm</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Friday to Saturday</th>
+                        <th>11am-3pm</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Sunday</th>
+                        <th>Close</th>
+
+                    </tr>
+                </table>
+            </div>
+
+            <!--<!-5row 2 from left>-->
+            <div class="col-xs-12
+                     col-sm-4
+                     col-md-4
+                     col-lg-4">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://goo.gl/h1H6D7"></iframe>
+
+
+                </div>
+
+            </div>
+
+            <!--<!-5row 3 from left>-->
+            <div class="col-xs-12
+                     col-sm-4
+                     col-md-4
+                     col-lg-4">
+
+                <h3 class="text-center">Contact Us</h3>
+                    <div class="list-group">
+
+                        <ul class="fa-ul">
+                            <a href="#" class="list-group-item"><i class="fa fa-phone fa"></i>+65 123456789</a><br>
+                            <a href="#" class="list-group-item"><i class="fa fa-envelope"></i>Email: healthyboy88@email.com</a><br>
+                            <a href="#" class="list-group-item"><i class="fa fa-home"></i>Home</a>
+                        </ul>
+
+
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+
+                <ul class="list-inline text-center">
+                    <li>
+
+                        <a href="http://facwbook.com"> <i class="fa fa-handshake-o fa-5x"></i>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
